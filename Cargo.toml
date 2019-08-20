@@ -20,17 +20,17 @@ name = "mk66f18"
 repository = "https://github.com/japaric/cortex-m-quickstart"
 version = "0.1.0"
 
+[package.metadata.docs.rs]
+features = ["rt"]
+
 [dependencies]
-bare-metal = "0.2.0"
-cortex-m = "0.5.7"
+bare-metal = "0.2.4"
+cortex-m = "0.6.0"
 vcell = "0.1.0"
 
 [dependencies.cortex-m-rt]
 optional = true
-version = "0.6.3"
+version = "0.6.10"
 
 [features]
 rt = ["cortex-m-rt/device"]
-
-[package.metadata.docs.rs]
-features = ["rt"]
